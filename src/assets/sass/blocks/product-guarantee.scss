@@ -1,0 +1,42 @@
+.product-guarantee {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.product-guarantee__text {
+    margin-bottom: 20px;
+}
+
+.product-guarantee__text p {
+    margin-bottom: 15px;
+}
+
+.product-guarantee__text p:last-child {
+    margin-bottom: 0;
+}
+
+.product-guarantee__list-item {
+    margin-bottom: 5px;
+    padding-left: 20px;
+
+    position: relative;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+
+        background-color: $color-main;
+        border-radius: 50%;
+
+        position: absolute;
+        top: 7px;
+        left: 0;
+        z-index: 1;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

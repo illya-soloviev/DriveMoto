@@ -1,0 +1,129 @@
+.jq-checkbox, .jq-radio {
+    width: 14px;
+    height: 14px;
+    margin: 0 7px 0 0;
+    vertical-align: -2px;
+
+    background: $white;
+    border: 1px solid $gray-light;
+    box-shadow: none;
+}
+
+.jq-checkbox {
+
+    &.checked {
+        background-color: $color-accent;
+        border-radius: 0;
+        border: 0;
+    }
+
+    &.focused {
+        border: 1px solid $color-accent;
+    }
+}
+
+.jq-checkbox.checked .jq-checkbox__div {
+    width: 8px;
+    height: 5px;
+    margin: 3px 0 0 3px;
+
+    border-bottom: 2px solid $white;
+    border-left: 2px solid $white;
+}
+
+.jq-radio {
+    border-radius: 3px;
+
+    &.checked {
+        background-color: $color-accent;
+    }
+}
+
+.jq-radio.checked .jq-radio__div {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.jq-selectbox__select {
+    height: auto;
+    padding: 0 25px 0 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    color: #48494D;
+    text-shadow: none;
+}
+
+.jq-selectbox__select:hover {
+    background: transparent;
+}
+
+.jq-selectbox.focused .jq-selectbox__select {
+    border: 0;
+}
+
+.jq-selectbox__select:active {
+    box-shadow: none;
+}
+
+.jq-selectbox__select-text {
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #48494D;
+}
+
+.jq-selectbox__trigger {
+    border-left: 0;
+}
+
+.jq-selectbox__trigger-arrow {
+    width: 8px;
+    height: 8px;
+
+    border: 2px solid $gray-light;
+    border-right: 0;
+    border-bottom: 0;
+
+    position: absolute;
+    top: 4px;
+    right: 12px;
+
+    transform: rotate(-135deg);
+
+    .opened & {
+        top: 7px;
+        transform: rotate(45deg);
+    }
+}
+
+.jq-selectbox:hover .jq-selectbox__trigger-arrow {
+    border-top-color: $gray-light;
+}
+
+.jq-selectbox__dropdown {
+    width: auto;
+    margin: 2px 0 0;
+    padding: 15px 0 3px;
+    border: 1px solid $gray-lightest;
+    border-radius: 0;
+    background: $white;
+    box-shadow: none;
+}
+
+.jq-selectbox li {
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+
+    min-height: 0;
+    padding: 3px 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.jq-selectbox li.selected,
+.jq-selectbox li:hover {
+    background-color: rgba(107, 126, 172, 0.05);
+    color: rgba(0, 0, 0, 0.6);
+}

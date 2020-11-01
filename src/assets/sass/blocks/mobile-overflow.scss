@@ -1,0 +1,21 @@
+.mobile-overflow {
+
+    .card-tabs__nav & {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .catalog__filters-left & {
+        min-width: 0;
+    }
+
+    @media ( max-width: 991px ) {
+        min-width: 1000px;
+    }
+
+    @media ( max-width: 736px ) {
+        .catalog__filters-left & {
+            min-width: 1000px;
+        }   
+    }
+}

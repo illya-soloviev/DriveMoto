@@ -1,0 +1,42 @@
+.back-top {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    background-color: $color-accent;
+    
+    position: fixed;
+    bottom: 40px;
+    right: 25px;
+    z-index: 1000;
+
+    transition: opacity .3s linear, 
+    visibility .3s linear,
+    background-color .3s linear;
+
+    &:hover {
+        background-color: #104ba5;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        width: 15px;
+        height: 15px;
+        margin-top: 20px;
+        margin-left: 15px;
+
+        border-top: 1px solid $white;
+        border-left: 1px solid $white;
+
+        transform: rotate(45deg);
+    }
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+}

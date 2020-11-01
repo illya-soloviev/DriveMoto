@@ -1,0 +1,31 @@
+.menu-mobile {
+    display: none;
+    overflow-x: auto;
+
+    background-color: $color-base;
+
+    @media ( max-width: 991px ) {
+        display: block;
+        margin-bottom: 25px;
+    }
+}
+
+.menu-mobile__inner {
+    min-width: 450px;
+    padding: 14px 0 14px 15px;
+}
+
+.menu-mobile__list-item {
+    display: inline-block;
+}
+
+.menu-mobile__list-item + .menu-mobile__list-item {
+    margin-left: 15px;
+}
+
+.menu-mobile__link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color-main;
+}

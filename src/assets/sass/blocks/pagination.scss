@@ -1,0 +1,40 @@
+.pagination {
+    margin-top: 40px;
+}
+
+.pagination__list {
+    display: flex;
+    justify-content: center;
+
+    @media ( max-width: 414px ) {
+        justify-content: flex-start;
+    }
+}
+
+.pagination__list-item {
+    padding: 6px 14px;
+    margin: 0 4px;
+
+    border: 2px solid transparent;
+
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $gray-light;
+
+    transition: border-color .3s linear;
+
+    &:hover {
+        border-color: $color-accent;
+    }
+
+    &.active {
+        border: 2px solid $color-accent;
+        color: $color-accent;
+    }
+
+    @media ( max-width: 414px ) {
+        margin: 0;
+    }
+}

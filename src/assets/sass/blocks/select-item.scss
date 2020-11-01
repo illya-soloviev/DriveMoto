@@ -1,0 +1,29 @@
+.select-item + .jq-selectbox__select {
+    padding: 8px 46px 8px 20px;
+    border: 1px solid #D7D9DF;
+    color: $color-main;
+}
+
+.select-item.jq-selectbox.focused .jq-selectbox__select {
+    border: 1px solid #D7D9DF;
+}
+
+.select-item + .jq-selectbox__select .jq-selectbox__select-text {
+    width: auto !important;
+    color: $color-main;
+}
+
+.select-item + .jq-selectbox__select .jq-selectbox__trigger {
+    width: 20px;
+    right: 12px;
+}
+
+.select-item + .jq-selectbox__select .jq-selectbox__trigger-arrow {
+    top: 12px;
+    left: 0;
+    right: auto;
+
+    .opened & {
+        top: 15px;
+    }
+}

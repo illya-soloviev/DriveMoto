@@ -1,0 +1,24 @@
+.product-features {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.product-features__item {
+    padding: 10px 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-features__item:nth-child(odd) {
+    background-color: $gray-lightest;
+}
+
+.product-features__item-left {
+    width: 35%;
+}
+
+.product-features__item-right {
+    width: 65%;
+}

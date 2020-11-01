@@ -1,0 +1,19 @@
+.page {
+    min-height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    &--catalog {
+        padding-bottom: 335px;
+        position: relative;
+    }
+
+    @media ( max-width: 1024px ) {
+        
+        &--catalog {
+            padding-bottom: 520px;
+        }
+    }
+}

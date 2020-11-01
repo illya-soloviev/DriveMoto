@@ -1,0 +1,41 @@
+.card-tabs {
+    margin-bottom: 100px;
+
+    @media ( max-width: 1024px ) {
+        margin-bottom: 60px;
+    }
+}
+
+.card-tabs__nav {
+    margin-bottom: 50px;
+    padding: 22px 0;
+
+    background-color: $color-base;
+
+    @media ( max-width: 1024px ) {
+        margin-bottom: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.card-tabs__tab-item {
+    // padding: 0 18px 5px 0;
+    padding-bottom: 5px;
+    color: rgba($color-main, .6);
+    transition: color .3s linear;
+
+    &.tabs__nav-item--active {
+        border-bottom: 2px solid $color-accent;
+        color: $color-main;
+    }
+
+    &:hover {
+        color: $color-main;
+    }
+
+    @media ( max-width: 1024px ) {
+        font-size: 17px;
+        line-height: 19px;
+    }
+}

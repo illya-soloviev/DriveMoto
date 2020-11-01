@@ -1,0 +1,40 @@
+.menu-categories {
+    background-color: $color-base;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-categories__link {
+    display: inline-block;
+    padding: 15px 0 14px;
+
+    position: relative;
+    transition: text-shadow .3s;
+
+    &:hover {
+        text-shadow: 0 0 .65px $color-main;
+    }
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 0;
+        height: 3px;
+        
+        background-color: $color-accent;
+        
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: auto;
+        z-index: 1;
+
+        transition: position .3s, width .3s;
+    }
+    
+    &:hover::after {
+        width: 100%;
+        left: 0;
+    }
+}

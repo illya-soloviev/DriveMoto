@@ -1,0 +1,19 @@
+.tabs__nav {
+
+    @media ( max-width: 991px ) {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+}
+
+.tabs__content-item {
+    // display: none;
+    overflow-y: hidden;
+    height: 0;
+
+    &--active {
+        // display: block;
+        overflow-y: visible;
+        height: 100%;
+    }
+}

@@ -1,0 +1,19 @@
+.user-list {
+    margin-right: 13px;
+
+    display: flex;
+    align-items: center;
+}
+
+.user-list__item {
+    margin-right: 10px;
+}
+
+.user-list__link svg {
+    fill: $color-main;
+    transition: fill .3s linear;
+}
+
+.user-list__item:hover .user-list__link svg {
+    fill: $color-accent;
+}

@@ -1,0 +1,23 @@
+.basket {
+    position: relative;
+}
+
+.basket__number {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+    background-color: $color-accent;
+    border-radius: 50%;
+
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 20px;
+    color: $white;
+    text-align: center;
+
+    position: absolute;
+    right: -14px;
+    bottom: -2px;
+    z-index: 1;
+}

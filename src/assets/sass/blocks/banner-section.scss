@@ -1,0 +1,130 @@
+.banner-section .container {
+
+    @media ( max-width: 667px ) {
+        padding: 0;
+    }
+}
+
+.banner-section__inner {
+    display: flex;
+    justify-content: space-between;
+
+    @media ( max-width: 1170px ) {
+        justify-content: space-around;
+    }
+
+    @media ( max-width: 991px ) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.banner-section__slider {
+    width: 100%;
+    max-width: 870px;
+
+    position: relative;
+
+    @media ( max-width: 1170px ) {
+        max-width: 600px;
+    }
+
+    @media ( max-width: 991px ) {
+        max-width: none;
+        margin-bottom: 40px;
+    }
+}
+
+.banner-section__slider .slick-list,
+.banner-section__slider .slick-track {
+    height: 100%;
+}
+
+.banner-section__slider-item {
+    position: absolute;
+
+    .slick-initialized & {
+        position: static;
+    }
+}
+
+.banner-section__slider-btn {
+    padding: 0;
+    cursor: pointer;
+
+    background-color: transparent;
+    border: none;
+
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    
+    transform: translate3d(0, -50%, 0);
+
+    &--prev {
+        left: 20px;
+    }
+
+    &--next {
+        right: 20px;
+    }
+}
+
+.banner-section__slider-img {
+    display: block;
+    width: 100%;
+    max-width: 870px;
+    height: 100%;
+    min-height: 400px;
+
+    object-fit: cover;
+
+    @media ( max-width: 991px ) {
+        margin: 0 auto;
+    }
+
+    @media ( max-width: 667px ) {
+        min-height: 200px;
+    }
+
+    @media ( max-width: 414px ) {
+        min-height: 164px;
+    }
+}
+
+.banner-section__slider .slick-dots {
+    text-align: center;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+}
+
+.banner-section__slider .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.banner-section__slider .slick-dots button {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin: 0;
+    padding: 0;
+
+    background-color: transparent;
+    border: 1px solid $white;
+    border-radius: 50%;
+
+    font-size: 0;
+    color: transparent;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.banner-section__slider .slick-active button {
+    background-color: $white;
+}
